@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <form id="form">
+          <label for="fname"
+            >First Name :
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="First Name"
+              required
+            />
+          </label>
+          <label for="lname"
+            >Last Name :
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Last Name"
+              required
+            />
+          </label>
+          <label for="rollno"
+            >Roll No :
+            <input
+              type="number"
+              name="rollno"
+              id="rollno"
+              placeholder="Roll No Id"
+              minlength="3"
+              required
+            />
+          </label>
+          <label for="cname"
+            >College Name :
+            <input
+              type="text"
+              name="cname"
+              id="cname"
+              placeholder="College Name"
+              required
+            />
+          </label>
+          <label for="Status"
+            >Status :
+            <select name="Status" id="Status">
+              <option value="Pass">Pass</option>
+              <option value="Fail">Fail</option>
+              <option value="Pursuing">Pursuing</option>
+            </select>
+          </label>
+          <button id="btn" type="submit">Submit</button>
+        </form>
+      </section>
+      <section>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>College Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
